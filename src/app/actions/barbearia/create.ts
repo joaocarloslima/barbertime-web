@@ -22,7 +22,7 @@ export async function create(prevState: any, formData: FormData) {
     const resp = fetch(`${process.env.API_BASE_URL}/barbearia`, options)
 
     if ((await resp).ok) {
-        redirect("/login")
+        redirect("/home/barbearia")
     }
 
     if ((await resp).status == 400) {
