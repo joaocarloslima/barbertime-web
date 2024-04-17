@@ -9,10 +9,10 @@ export default function Home() {
       <div className="flex flex-col justify-start items-center mx-auto pt-12">
         <Icon/>
         <p className="text-stone-700 font-bold text-4xl text-center mt-40">SEJA BEM-VINDO!</p>
-        <Link href={"./login/barbearia"}>
+        <Link href={"./register/barbearia"}>
           <Button className="bg-cerulean-blue-700 m-8 text-2xl" variant="solid">Eu sou uma barbearia</Button>
         </Link>   
-        <Link href={"./login/cliente"}>
+        <Link href={"./register/cliente"}>
           <Button className="bg-cerulean-blue-700 text-2xl" variant="shadow">Eu sou um cliente</Button>
         </Link>
       </div>
