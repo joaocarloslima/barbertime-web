@@ -61,8 +61,8 @@ export default async function Barbearia() {
                         errorMessage={state?.messageNome}
                     />
                     <div className="flex justify-around mt-4">
-                        < SubmitButton />
-                        <Link href="./">
+                        < SubmitButton name="cadastrar"/>
+                        <Link href="/home/barbearia/">
                             <Button className="bg-cerulean-blue-700 text-2xl" variant="shadow">Já tenho cadastro</Button>
                         </Link>
                     </div>

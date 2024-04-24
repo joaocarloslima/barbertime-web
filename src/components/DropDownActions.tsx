@@ -16,11 +16,11 @@ interface DropDownActionsProps {
 
 export function DropDownActions({onEdit, onDelete}: DropDownActionsProps){
     return (
-        <Dropdown>
-        <DropdownTrigger>
+        <Dropdown className="bg-slate-400">
+        <DropdownTrigger >
             <ChevronDown />
         </DropdownTrigger>
-        <DropdownMenu aria-label="Static Actions">
+        <DropdownMenu className="bg-slate-400" aria-label="Static Actions">
             
             <DropdownItem 
                 key="edit" 

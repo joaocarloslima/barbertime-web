@@ -18,7 +18,7 @@ export default async function Barbearias() {
   return (
     <main className="flex min-h-screen flex-col items-center ">
 
-      <section className="bg-slate-900 rounded min-w-[500px] p-6 m-4">
+      <section className="bg-slate-700 rounded min-w-[500px] p-6 m-4">
         <div className="flex justify-between">
           <h2 className="text-2xl font-semibold" >Barbearia Cadastradas</h2>
         </div>

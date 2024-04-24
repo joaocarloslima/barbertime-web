@@ -36,7 +36,7 @@ export function Detalhar(barbearia: Barbearia) {
             <p>TELEFONE: {barbearia.telefone}</p>
             <p>CNPJ: {barbearia.cnpj}</p>
             <DropDownActions 
-                onEdit={() => router.push(`home/barbearia/${barbearia.id}`)}
+                onEdit={() => router.push(`/edit/barbearia/${barbearia.id}`)}
                 onDelete={handleDelete} 
             />
             

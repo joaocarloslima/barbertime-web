@@ -17,7 +17,7 @@ export function BarbeariaItem(props: BarbeariaItemProps){
             </div>
 
             <Link href={`/home/barbearia/${barbearia.id}`}>
-                <Button>Detalhar</Button>
+                <Button color="primary" variant="ghost">Detalhar</Button>
             </Link>
             
  

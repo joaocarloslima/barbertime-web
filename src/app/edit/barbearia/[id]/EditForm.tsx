@@ -36,7 +36,7 @@ export function EditForm(barbearia: Barbearia) {
                 <Link href="/categorias">
                     <Button variant="bordered" startContent={<ArrowLeft />} >cancelar</Button>
                 </Link>
-                <SubmitButton />
+                <SubmitButton name="salvar" />
             </div>
         </form>
     )
