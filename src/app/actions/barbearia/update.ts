@@ -2,6 +2,7 @@
 
 import { redirect } from "next/navigation"
 
+
 export async function update(prevState: any, formData: FormData){
     await new Promise(r => setTimeout(r, 1000))
 
@@ -25,7 +26,7 @@ export async function update(prevState: any, formData: FormData){
     const resp = await fetch(`${process.env.API_BASE_URL}/barbearia/${id}`, options)
     
     if (resp.ok){
-      redirect("/barbearia")
+      redirect(`./${id}`);
     }
 
     if (resp.status == 400){

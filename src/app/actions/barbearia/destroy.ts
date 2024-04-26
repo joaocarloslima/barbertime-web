@@ -1,5 +1,7 @@
 "use server"
 
+import { redirect } from "next/navigation";
+
 
 
 export async function destroy(id: number){
@@ -12,5 +14,8 @@ export async function destroy(id: number){
 
     const resp = await fetch(`${process.env.API_BASE_URL}/barbearia/${id}`, options)
 
+    if (resp.ok){
+        redirect(`/home/barbearia`);
+      }
    
 }
