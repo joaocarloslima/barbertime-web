@@ -1,8 +1,12 @@
 
-import { Params } from "next/dist/shared/lib/router/utils/route-matcher";
 import { EditForm } from "../../../edit/barbearia/[id]/EditForm";
 import { getById } from "@/app/actions/barbearia/get-by-id";
 
+interface Params {
+  params: {
+    id: number
+  }
+}
 
 export default async function EditarBarbearia({params}: Params) {
   const { id } = params
