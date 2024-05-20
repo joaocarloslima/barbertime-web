@@ -1,8 +1,12 @@
 
-import { Params } from "next/dist/shared/lib/router/utils/route-matcher";
 import { Detalhar } from "./Detalhar";
 import { getById } from "@/app/actions/barbearia/get-by-id";
 
+interface Params {
+  params: {
+    id: number
+  }
+}
 
 export default async function DetalharBarbearia({params}: Params) {
   const { id } = params
