@@ -34,9 +34,17 @@ export function Detalhar(barbearia: Barbearia) {
         <form action={formAction} className="flex flex-col items-center bg-slate-700 rounded min-w-[500px] p-6 m-4">
             <input type="hidden" name="id" value={barbearia.id} />
             <h2 className="text-2xl font-bold">Barbearia: {barbearia.nome}</h2>
-            <p>EMAIL: {barbearia.email}</p>
-            <p>TELEFONE: {barbearia.telefone}</p>
+            <p>Email: {barbearia.email}</p>
+            <p>Telefone: {barbearia.telefone}</p>
             <p>CNPJ: {barbearia.cnpj}</p>
+            <h4 className="mt-2 mb-1">Serviços:</h4>
+            <ul>
+                {barbearia.servicos.map(servico => (
+                <li key={servico.id}>
+                    {servico.nome}: R${servico.valor.toFixed(2)}
+                </li>
+                ))}
+                </ul>
             <DropDownActions 
                 onEdit={() => router.push(`/edit/barbearia/${barbearia.id}`)}
                 onDelete={handleDelete} 

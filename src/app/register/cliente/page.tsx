@@ -9,54 +9,16 @@ export default function Cliente() {
         <main className="flex min-h-screen p-15">
             <div className="flex flex-col justify-start items-center mx-auto pt-12">
                 <Icon />
-                <form className="flex flex-col gap-3 p-6 m-6 rounded min-w-[500px]  ">
-                    <h2 className="text-3xl font-bold text-stone-700">CADASTRE A SUA BARBEARIA</h2>
-                    <Input
-                        key="nome"
-                        label="Nome"
-                        name="nome"
-                        labelPlacement={"outside"}
-                        placeholder="Digite o seu nome"
-                        variant="underlined"
-                    />
-                    <Input
-                        key="cep"
-                        label="CEP"
-                        name="cep"
-                        labelPlacement={"outside"}
-                        placeholder="Digite o seu CEP"
-                        variant="underlined"
-                    />
-                    <Input
-                        key="tel"
-                        label="Telefone"
-                        name="tel"
-                        labelPlacement={"outside"}
-                        placeholder="Digite o seu telefone"
-                        variant="underlined"
-                    />
-                    <Input
-                        key="email"
-                        label="Email"
-                        name="email"
-                        labelPlacement={"outside"}
-                        placeholder="Digite o seu email"
-                        variant="underlined"
-                    />
-                    <Input
-                        key="date"
-                        label="Data de Nascimento"
-                        name="date"
-                        labelPlacement={"outside"}
-                        placeholder="Digite o CNPJ da barbearia"
-                        variant="underlined"
-                    />
-                    <div className="flex justify-around mt-4">
-                        <Link href="./">
-                            <Button className="bg-cerulean-blue-700 text-2xl" variant="shadow">Cadastrar</Button>
+                <form className="flex flex-col gap-3 p-6 m-6 rounded min-w-[500px] mt-20 ">
+                    <h2 className="text-3xl font-bold text-stone-700 text-center">SITE EM DESENVOLVIMENTO</h2>
+                    <div className="flex justify-around mt-10">
+                        <Link href="/home/barbearia/">
+                            <Button className="bg-cerulean-blue-700 text-2xl" variant="shadow">Ver as barbearias</Button>
                         </Link>
-                        <Link href="./">
-                            <Button className="bg-cerulean-blue-700 text-2xl" variant="shadow">Já tenho cadastro</Button>
+                    </div>
+                    <div className="flex justify-around mt-10">
+                        <Link href="../">
+                            <Button className="bg-cerulean-blue-700 text-2xl" variant="shadow">Voltar</Button>
                         </Link>
                     </div>
                 </form>
